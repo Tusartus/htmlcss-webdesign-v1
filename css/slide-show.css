@@ -1,0 +1,219 @@
+
+/*  testimonialsbox */
+.testimonialsbox{
+
+    background: #333333;
+
+}
+
+.parent-box{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width:100vw;
+    height: auto;
+    
+    padding:10px;
+
+}
+
+.box-child-content
+{
+  width:50%;
+  
+  padding:0.9rem;
+  margin-top: 5px;
+  opacity:0.8;
+  animation: box-img-anime 6.5s;
+  transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+ color:#1d878f;
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+div.field-cont{
+    padding:10px;
+    font-family: 'Merriweather', serif;
+    font-size:22px;
+    
+      
+}
+
+.box-child-img{
+    width:50%;
+    padding:5px;
+    opacity:0.8;
+    animation: box-img-anime 8s;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+
+    
+   
+   }
+.box-img{
+    width:90vw;
+    height:250px;
+}
+
+@keyframes box-img-anime {
+ 
+    0%{
+        width:30%;
+        opacity:0.2;
+        transform: scale(1);
+        color: #2be243;
+    }
+
+    100%{
+
+        width:50%;
+        opacity:1;
+        transform: scale(0.5);
+        color:#1d878f;
+
+    }
+
+}
+
+@keyframes box-cont-anime {
+ 
+    0%{
+        width:30%;
+        opacity:0.8;
+        transform: scale(1);
+    }
+
+    100%{
+
+        width:50%;
+        opacity:1;
+        transform: scale(0.5);
+
+    }
+
+}
+
+
+/*  testimonial   */
+.testimonials{
+	min-height: 70vh;
+	background-color: #201e1e;
+	float: left;
+	width: 100%;
+	padding:100px 15px;
+	
+}
+
+.parents
+.container{
+	max-width: 1170px;
+	margin: auto;
+}
+.testimonials .title{
+	margin-bottom:60px
+}
+.testimonials .title h1{
+	text-align: center;
+	color:#76eede;
+	text-transform: uppercase;
+	font-size: 36px;
+	margin:0;
+}
+
+.testimonials .slider{
+ border:1px solid #333333;
+ max-width: 600px;
+ margin: auto;
+ text-align: center;
+ padding:30px;
+}
+/* need this  */
+.testimonials .slider .slide{
+	display: none;
+}
+
+.testimonials .slider .slide.active{
+	
+	display: block;
+	animation: slide 1s ease;
+}
+
+/* and this  */
+
+@keyframes slide{
+	0%{
+		opacity:0;
+		transform: translateX(-25px);
+	}
+	100%{
+	   opacity:1;
+		transform: translateX(0px);	
+	}
+}
+
+.testimonials .slider p{
+	font-size:18px;
+	color:#ffffff;
+	word-spacing: 2px;
+}
+.testimonials .slider .client-info h3{
+	font-weight: bold;
+	color:#fff;
+	font-size:18px;
+	margin:30px 0 10px;
+}
+.testimonials .slider .client-info span{
+	display: block;
+	font-size:16px;
+	color:#11bead;
+}
+/* need this to click  and see next testamonial */
+
+.testimonials .slider-indicator{
+	text-align: center;
+	padding-top:30px;
+}
+
+.testimonials .slider-indicator img{
+	max-height:80px;
+	max-width:80px;
+	border-radius:50%;
+	display: inline-block;
+	margin:0 8px;
+	opacity:0.2;
+	border:4px solid #fff;
+	cursor: pointer;
+	transition: opacity 1s ease;
+}
+
+/* this to activateand see next slider-indicator  */
+.testimonials .slider-indicator img.active{
+	opacity:1;
+}
+
+
+
+/* footer  */
+ .footerpar{
+	width: 100%;
+    height: 12vh;
+	background: #461a1a;
+	color:#fff;
+	position:relative;
+	margin-top: 2px;
+    display: flex;
+
+}
+.footerbox span{
+	padding:0.8rem;
+	margin-left: 5px;
+}
+
+.footerbox span a{
+	text-decoration: none;
+	color:#fff;
+
+}
+
+
